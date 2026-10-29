@@ -1,0 +1,9 @@
+<div *ngIf="filteredProducts$ | async as products; else loading">
+  <ul>
+    <li *ngFor="let p of products">{{ p.name }}</li>
+  </ul>
+</div>
+
+<ng-template #loading>
+  <h2>Loading...</h2>
+</ng-template>

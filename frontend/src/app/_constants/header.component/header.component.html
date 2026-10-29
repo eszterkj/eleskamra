@@ -1,0 +1,111 @@
+<header style="width: 100%">
+  <nav
+    style="
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: fit-content;
+      flex-direction: column;
+      width: 100%;
+    "
+  >
+    <!-- Bal oldal: logo -->
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: rgb(255, 233, 210);
+        width: 100%;
+        position: relative;
+      "
+    >
+      <div
+        style="display: flex; gap: 1rem; margin-top: 0.5rem; margin-bottom: 0.5rem; cursor: pointer"
+        (click)="setFilter(null)"
+      >
+        <img src="images/logo_mini.png" style="height: 5rem; filter: invert()" />
+        <img src="images/name_mini.png" style="height: 5rem; filter: invert()" />
+      </div>
+
+      <h1
+        class="fredericka-the-great-regular"
+        style="position: absolute; left: 50%; transform: translateX(-50%); margin: 0"
+      >
+        {{ title }}
+      </h1>
+    </div>
+
+    <div
+      class="menu bonheur-royale-regular"
+      style="display: flex; justify-content: space-between; width: 100%"
+    >
+      <button
+        nz-button
+        class="hover-underline filter-btn qwigley-regular"
+        (click)="setFilter('husaruk')"
+      >
+        {{ 'CLIENT.NAVBAR.BUTTONS.MEATS' | text }}
+      </button>
+      <button
+        nz-button
+        class="hover-underline filter-btn qwigley-regular"
+        (click)="setFilter('zoldsegek')"
+      >
+        {{ 'CLIENT.NAVBAR.BUTTONS.VEGETABLES' | text }}
+      </button>
+      <button
+        nz-button
+        class="hover-underline filter-btn qwigley-regular"
+        (click)="setFilter('gyumolcsok')"
+      >
+        {{ 'CLIENT.NAVBAR.BUTTONS.FRUITS' | text }}
+      </button>
+      <button
+        nz-button
+        class="hover-underline filter-btn qwigley-regular"
+        (click)="setFilter('pekaruk')"
+      >
+        {{ 'CLIENT.NAVBAR.BUTTONS.DULCES' | text }}
+      </button>
+      <button
+        nz-button
+        class="hover-underline filter-btn qwigley-regular"
+        (click)="setFilter('tejtermekek')"
+      >
+        {{ 'CLIENT.NAVBAR.BUTTONS.MILK' | text }}
+      </button>
+      <button
+        nz-button
+        class="hover-underline filter-btn qwigley-regular"
+        (click)="setFilter('egyebek')"
+      >
+        {{ 'CLIENT.NAVBAR.BUTTONS.OTHER' | text }}
+      </button>
+    </div>
+
+    <!-- Jobb oldal: search + username -->
+    <!-- Törlődjön ki, ha bezáródik -->
+    <!--<div style="display: flex; gap: 1rem; align-items: center;">
+    <div class="searchContainer">
+      <input type="text" id="searchInput"/>
+      <div class="close">
+          <span class="front"></span>
+          <span class="back"></span>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center;">
+      <div class="username bonheur-royale-regular" *ngIf="signedInUser">{{signedInUser.username}}</div>
+      <div class="dropdownOwn">
+        <img src="app/assets/g3.png" style="height: 3rem; cursor: pointer;" (click)="dropDown()">
+        <div class="dropdown-content">
+          <a class="dropdown-item" href="#">Profilom</a>
+          <hr>
+          <a class="dropdown-item" href="#">Kijelentkezés</a>
+        </div>
+      </div>
+    </div>
+  </div>-->
+  </nav>
+</header>

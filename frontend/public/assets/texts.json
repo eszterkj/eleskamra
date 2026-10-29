@@ -1,0 +1,14 @@
+{
+  "CLIENT": {
+    "NAVBAR": {
+      "BUTTONS": {
+        "DULCES": "Pékáruk",
+        "FRUITS": "Gyümölcsök",
+        "MEATS": "Húsok",
+        "MILK": "Tejtermékek",
+        "OTHER": "Egyebek",
+        "VEGETABLES": "Zöldségek"
+      }
+    }
+  }
+}
